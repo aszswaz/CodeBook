@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--平台-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="平台："
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/account_detail_platform"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autofillHints="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <!--账号-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="账号："
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/account_detail_account"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autofillHints="no"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+
+    <!--密码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="密码："
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/account_detail_password"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autofillHints="no"
+            android:inputType="text"
+            tools:ignore="LabelFor,TextFields" />
+
+        <Button
+            android:id="@+id/account_detail_password_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="随机"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="长度："
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/account_detail_length"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autofillHints="no"
+            android:text="6"
+            android:inputType="number"
+            tools:ignore="HardcodedText,LabelFor,TextFields" />
+
+        <CheckBox
+            android:id="@+id/account_detail_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数字"
+            android:checked="true"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/account_detail_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字母"
+            android:checked="true"
+            tools:ignore="HardcodedText" />
+
+        <CheckBox
+            android:id="@+id/account_detail_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标点符号"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>
